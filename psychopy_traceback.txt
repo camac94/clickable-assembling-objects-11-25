@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/gitlab/exceptions.py”, line 251, in wrapped_f
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/gitlab/mixins.py”, line 204, in create
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/gitlab/__init__.py”, line 604, in http_post
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/gitlab/__init__.py”, line 510, in http_request
+gitlab.exceptions.GitlabHttpError: 400: {‘name’: [“can contain only letters, digits, emojis, ‘_’, ‘.’, dash, space. It must start with letter, digit, emoji or ‘_’.”], ‘limit_reached’: []}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/psychopy/app/pavlovia_ui/project.py”, line 146, in submitChanges
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/psychopy/projects/pavlovia.py”, line 329, in createProject
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/psychopy/projects/pavlovia.py”, line 324, in createProject
+  File “/Applications/PsychoPy.app/Contents/Resources/lib/python3.6/gitlab/exceptions.py”, line 253, in wrapped_f
+gitlab.exceptions.GitlabCreateError: 400: {‘name’: [“can contain only letters, digits, emojis, ‘_’, ‘.’, dash, space. It must start with letter, digit, emoji or ‘_’.”], ‘limit_reached’: []}
